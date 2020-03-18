@@ -1,0 +1,46 @@
+{
+  "name": "@algorithm-visualizer/server",
+  "version": "2.0.0",
+  "title": "Algorithm Visualizer",
+  "description": "Algorithm Visualizer is an interactive online platform that visualizes algorithms from code.",
+  "scripts": {
+    "watch": "cross-env NODE_ENV=development NODE_PATH=src ts-node-dev --respawn --ignore-watch node_modules --no-notify src",
+    "start": "cross-env NODE_ENV=production NODE_PATH=src ts-node --transpile-only src",
+    "tslint": "tslint -c tslint.json -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/algorithm-visualizer/server.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/compression": "0.0.36",
+    "@types/execa": "^0.9.0",
+    "@types/express": "^4.17.3",
+    "@types/fs-extra": "^7.0.0",
+    "@types/morgan": "^1.9.0",
+    "@types/node": "^12.12.30",
+    "@types/remove-markdown": "^0.1.1",
+    "@types/uuid": "^3.4.8",
+    "cross-env": "^7.0.2",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "tslint": "^5.20.1"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.640.0",
+    "axios": "^0.19.2",
+    "body-parser": "^1.18.2",
+    "compression": "^1.7.3",
+    "dotenv": "^8.2.0",
+    "dotenv-flow": "^2.0.0",
+    "express": "^4.16.4",
+    "express-github-webhook": "^1.0.6",
+    "fs-extra": "^6.0.1",
+    "morgan": "^1.9.1",
+    "remove-markdown": "^0.3.0",
+    "ts-httpexceptions": "^4.1.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.3",
+    "uuid": "^3.4.0"
+  }
+}
