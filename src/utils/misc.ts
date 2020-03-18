@@ -23,7 +23,7 @@ export async function pull(dir: string, repo: string, commit = 'origin/master') 
       stderr: process.stderr,
     });
   } else {
-    await execute(`git clone https://github.com/algorithm-visualizer/${repo}.git ${dir}`, {
+    await execute(`git clone https://github.com/niubility-algorithm/${repo}.git ${dir}`, {
       stdout: process.stdout,
       stderr: process.stderr,
     });
